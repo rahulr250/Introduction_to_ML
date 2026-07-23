@@ -1,0 +1,146 @@
+Statistics: Study of collecting and analyzing data
+Summary Statistics: Understand and reveal the highlights of the data
+
+Data type classification
+Measures of Center
+Measures of Spread
+------------------------------------------------------------------------------
+Data type classification
+	|
+	|--> Numeric (Quantitative)
+	|		|--> Discrete (counted, whole number - no decimal)
+	|		|		|--> Number of students in a class
+	|		|
+	|		|--> Continuous (measured, have precision - can include decimal values)
+	|		|		|--> Speed of Car, Avg weight of students in a class 	
+	|
+	|--> Categorical (Qualitative)
+			|--> Ordinal (ordered, values have meaningful sequence)
+			|		|--> Feedback after a customer care interaction (1 - 5 ==> Poor to Excellent)
+			|
+			|--> Nominal (unordered, values are simply labels for classification purpose)
+					|--> Color of a Car, Country of origin of participants in a conference)
+------------------------------------------------------------------------------
+
+Q1) What is your favorite color? [Categorical, Nominal]
+Q2) How good are you in Mathematics in a scale of 1 to 10? [Categorical, Ordinal]
+Q3) What is your GPA in the previous semester at the university? [Numeric, Continuous]
+Q4) In a class, how many scored between 80% and 90% in the last Mathematics test? [Numeric, Discrete]
+
+------------------------------------------------------------------------------
+
+Types of Statistics
+	|--> Descriptive (Collective summary of data)
+	|--> Inferential (Make predictions for a larger population based on Sample data)
+	
+Q5) Data is available for 100 customer care interactions. What is the avg customer call duration?
+[Descriptive]
+
+Q6) In a university, what percent of students are eligible to be hired? [Inferential]
+
+Q7) I caught 100 fishes while fishing at the lake. What is the avg weight of the fish which i caught?
+[Descriptive]
+
+Q8) What is the avg weight of the fish in the lake? [Inferential]
+
+------------------------------------------------------------------------------
+
+Measures of Center
+	|--> Mean
+	|--> Median
+	|--> Mode
+	
+Mean: Sum of the data points / Number of data points	
+
+Data points:
+9 5 3 6 11 5 17 12 4 2
+
+Mean: 74 / 10 --> 7.4
+
+Median: Middle value in an Ordered dataset
+2 3 4 5 5 6 9 11 12 17
+
+In Odd number of data points, is it very easy to pick the Median (Middle value)
+In even number of data points, take the Mean of the 2 Middle values
+
+Median --> (5 + 6) / 2 --> 5.5
+
+50% of data points are lower than Median
+50% of data points are higher than Median
+
+Mode: Data point that occurs maximum of times
+Here, the Mode is 5
+
+If all the data points appear only once --> No Mode scenario
+If multiple data points appear same number of times --> Multi Mode scenario
+
+Skew: Measure of the Symmetry of the distribution
+
+Skew is 0   --> Symmetrical distribution
+Skew is > 0 --> Positive skewed (Right tail)
+Skew is < 0 --> Negative skewed (Left tail)
+------------------------------------------------------------------------------
+
+Measures of Spread
+	|--> Range
+	|--> Variance
+	|--> Standard Deviation
+	|--> Outliers
+	
+Range == Min and Max	
+
+Variance: How much on average do the data points differ from the Mean
+
+dp1 minus Mean
+dp2 minus Mean
+dp3 minus Mean
+
+Avg of (Squared distances of each data point from the Mean)
+
+Low Variance: Data points are close to the Mean
+High Variance: Data points are spread out (far) from the Mean
+
+In Machine Learning, high variance will be hard to Model
+Solution:
+1) Find and eliminate the Outliers
+2) Apply feature scaling using Standardization
+
+Standard Deviation: Square root of the Variance
+Tell us how much each data point on average deviates from the Mean
+
+Outliers:
+1) Data points which are significantly different from rest of the data points
+2) They are either much higher or much lower then the majority of the data points
+
+How to identify the Outliers?
+
+1) Find out the Median
+
+50% of data points are lower than Median
+50% of data points are higher than Median
+
+2 3 4 5 5 6 9 11 12 17
+Median --> (5 + 6) / 2 --> 5.5
+
+
+2 3 4 5 5     6 9 11 12 17
+
+Q1 is the Median of the Lower half 
+Q3 is the Median of the Upper half 
+
+Q1: 4
+Q3: 11
+
+IQR: Q3 - Q1
+IQR: 11 - 4 ==> 7
+
+Lower bound: Q1 - 1.5 x IQR
+Upper bound: Q3 + 1.5 x IQR
+
+Lower bound: 4 - 10.5 ==> -6.5
+Upper bound: 11 + 10.5 ==> 21.5
+
+Any value either less than Lower bound or any value more than Upper bound is an Outlier
+
+
+

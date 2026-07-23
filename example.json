@@ -1,0 +1,30 @@
+[
+    {
+        "empid": 101,
+        "ename": "John",
+        "salary" : 50000,
+        "dept" : "HR",
+        "location" : "New York"
+    },
+    {
+        "empid": 102,
+        "ename": "Sam",
+        "salary" : 65000,
+        "dept" : "Accounts",
+        "location" : "Chicago"
+    },
+    {
+        "empid": 103,
+        "ename": "Jane",
+        "salary" : 55000,
+        "dept" : "IT",
+        "location" : "Dallas"
+    },
+    {
+        "empid": 104,
+        "ename": "Nancy",
+        "salary" : 75000,
+        "dept" : "Marketing",
+        "location" : "Los Angeles"
+    }
+]
